@@ -36,12 +36,12 @@ public class Action_keyword {
         robot.mouseMove(400, 565);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
     public void logout() throws InterruptedException {
         driver.findElement(By.id("account-menu-toggle")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.id("sign_out_link")).click();
         Thread.sleep(1000);
     }

@@ -30,14 +30,13 @@ public class ReadExcelSheet {
             Cell c = r.getCell(colNo);
             String data = c.getStringCellValue();
             a.add(data);
-            a.add(((Row) row.next()).getCell(colNo).getStringCellValue());
+            //a.add(((Row) row.next()).getCell(colNo).getStringCellValue());
         }
         System.out.println("List: " +a);
         return a;
     }
 
     public void DemoFile(int i) {
-// TODO Auto-generated method stub
 
     }
 }
